@@ -9,5 +9,6 @@ Leetcode 100 刷题记录
 ##### 哈希表可以看成是数组的逆映射
 
 ### day 2 2024/3/15
+-----
 ##### leetcode 2.[搜索插入位置](https://leetcode.cn/problems/search-insert-position/submissions/512277194/?envType=study-plan-v2&envId=top-100-liked)
 ##### 调API Collections.binarySearch / 二分查找
