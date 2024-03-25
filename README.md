@@ -19,3 +19,10 @@ Leetcode 100 刷题记录
 ##### 哈希表
 ##### 原始想法：hm = new Hashmap<String, List<List<String>>>, 将输入的词重排列后作为键，原始的词作为值，加入到hm中，没加入一个新的词，判断和已有的重排列键是否一样，如果一样，利用Hashmap的特性获取到被覆盖的值列表，将新加入的键加进去。
 ##### 题解：大致思想差不多，但是作为键之后，添加值只需要查询当前hashmap是否包含键就可以，我真是个傻逼
+
+### day 4 2024/3/25
+-----
+##### leetcode 4.[最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked)
+##### 哈希？
+##### 原始想法：空间换时间，每一个原始数组元素值映射为新数组的索引，但是有些值特别大会超内存
+##### 题解：hashset去重，先看是否包含当前值减一的元素，不包含的情况下，从该元素值开始依次找大1的连续串，只有个别元素会进入这个过程，看起来是O(n^2), 实际上不是，这个想不出来
